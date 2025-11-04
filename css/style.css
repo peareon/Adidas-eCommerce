@@ -26,7 +26,7 @@ body {
 }
 
 .header__icon {
-  width: 50px;
+  width: 35px;
   display: inline-block;
 }
 
@@ -74,7 +74,8 @@ body {
 }
 
 .products__image {
-  width: 200px;
+  max-width: 200px;
+  height: 200px;
   margin-bottom: 15px;
 }
 
