@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d85f8cba54.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
     <title>Tienda Adidas</title>
 </head>
 <body>
     <header class="header">
         <i class="header__icon"><img class="header_imageicon" src="imgs/menu.png" alt="icono menu"></i>
         <img class="header_image" src="imgs/logo.png" alt="Logo adidas">
-        <i class="header__icon"><img class="header_imageicon" src="imgs/cart.png" alt="Icono carrito"></i>
+        <i class="header__icon"><img class="header_imageicon" src="imgs/cart.png" alt="Icono carrito"><div class="cart__counter">0</div></i>
     </header>
     <main>
         <section class="banner">
@@ -21,62 +24,57 @@
             <article class="products__article">
                 <img class="products__image" src="imgs/jersey.jpg" alt="Jersey mexico">
                 <h3 class="products--padding" >Jersey Mexico 2025</h3>
-                <p class="products--padding">$1,000.00</p>
+                <p class="products--padding" data-src="imgs/jersey.jpg" data-alt="Jersey México" data-name="Jersey México 2026" >$1,000.00 <i class="fa-solid fa-cart-arrow-down products__cart"></i></p>
             </article>
             <article class="products__article">
                 <img class="products__image" src="imgs/chamarra.jpg" alt="Chamarra">
                 <h3 class="products--padding">Chamarra adidas</h3>
-                <p class="products--padding">$2,400.00</p>
+                <p class="products--padding" data-src="imgs/chamarra.jpg" data-alt="Chamarra" data-name="Chamarra Adidas">$2,400.00 <i class="fa-solid fa-cart-arrow-down products__cart"></i></p>
             </article>
             <article class="products__article">
                 <img class="products__image" src="imgs/tenis.avif" alt="Tenis de adidas">
                 <h3 class="products--padding">Adidas LG</h3>
-                <p class="products--padding">$3,300.00</p>
+                <p class="products--padding" data-src="imgs/tenis.avif" data-alt="Tenis adidas" data-name="Adidas LG">$3,300.00 <i class="fa-solid fa-cart-arrow-down products__cart"></i></p>
             </article>
             <article class="products__article">
-                <img class="products__image" src="imgs/jersey.jpg" alt="Jersey mexico">
-                <h3 class="products--padding">Jersey Mexico 2025</h3>
-                <p class="products--padding">$1,000.00</p>
+                <img class="products__image" src="imgs/predator.jpg" alt="Tenis predator">
+                <h3 class="products--padding">Tenis Predator</h3>
+                <p class="products--padding" data-src="imgs/predator.jpg" data-alt="Tenis predator" data-name="Tenis Predator">$2,800.00 <i class="fa-solid fa-cart-arrow-down products__cart"></i></p>
             </article>
             <article class="products__article">
-                <img class="products__image" src="imgs/chamarra.jpg" alt="Chamarra">
-                <h3 class="products--padding">Chamarra adidas</h3>
-                <p class="products--padding">$2,400.00</p>
+                <img class="products__image" src="imgs/messi2.png" alt="Tenis messi">
+                <h3 class="products--padding">Tenis messi</h3>
+                <p class="products--padding" data-src="imgs/messi2.png" data-alt="Tenis messi" data-name="Tenis messi">$3,100.00 <i class="fa-solid fa-cart-arrow-down products__cart"></i></p>
             </article>
             <article class="products__article">
-                <img class="products__image" src="imgs/tenis.avif" alt="Tenis de adidas">
-                <h3 class="products--padding">Adidas LG</h3>
-                <p class="products--padding">$3,300.00</p>
+                <img class="products__image" src="imgs/argentina.png" alt="Jersey Argentina">
+                <h3 class="products--padding">Jersey Argentina</h3>
+                <p class="products--padding" data-src="imgs/argentina.png" data-alt="Jersey argentina" data-name="Jersey argentina">$1,200.00 <i class="fa-solid fa-cart-arrow-down products__cart"></i></p>
             </article>
             <article class="products__article">
-                <img class="products__image" src="imgs/tenis.avif" alt="Tenis de adidas">
-                <h3 class="products--padding">Adidas LG</h3>
-                <p class="products--padding">$3,300.00</p>
+                <img class="products__image" src="imgs/BM.png" alt="Jersey Bayern Munich">
+                <h3 class="products--padding">Jersey Beyern Munich</h3>
+                <p class="products--padding" data-src="imgs/BM.png" data-alt="Jersey Bayern Munich" data-name="Jersey Bayern Munich">$1,200.00 <i class="fa-solid fa-cart-arrow-down products__cart"></i></p>
             </article>
             <article class="products__article">
-                <img class="products__image" src="imgs/jersey.jpg" alt="Jersey mexico">
-                <h3 class="products--padding">Jersey Mexico 2025</h3>
-                <p class="products--padding">$1,000.00</p>
-            </article>
-            <article class="products__article">
-                <img class="products__image" src="imgs/chamarra.jpg" alt="Chamarra">
-                <h3 class="products--padding">Chamarra adidas</h3>
-                <p class="products--padding">$2,400.00</p>
-            </article>
-            <article class="products__article">
-                <img class="products__image" src="imgs/tenis.avif" alt="Tenis de adidas">
-                <h3 class="products--padding">Adidas LG</h3>
-                <p class="products--padding">$3,300.00</p>
+                <img class="products__image" src="imgs/RM.png" alt="Jersey Real Madrid">
+                <h3 class="products--padding">Jersey Real Madrid</h3>
+                <p class="products--padding" data-src="imgs/RM.png" data-alt="Jersey Real Madrid" data-name="Jersey Real Madrid">$1,200.00 <i class="fa-solid fa-cart-arrow-down products__cart"></i></p>
             </article>
         </section>
 
         <section class="cart">
             <h2 class="cart__header">carrito</h2>
-            <div class="cart__content">
-                <img class="cart__images" src="imgs/chamarra.jpg" alt="">
-                <p class="cart--margin">$1700</p>
-                <p class="cart__item cart--margin">Chamarra</p>
-                <i class="cart__remove"><img src="imgs/cart.png" alt="Quitar" class="cart__deleteicon"></i>
+
+        </section>
+        <section class="menu">
+            <div class="menu__content">
+                <div class="menu__closediv">
+                    <h3><a href="/Tienda">Tienda</a></h3>
+                    <div><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <h3><a href="/Blog">Blog</a></h3>
+                <h3><a href="/Contacto">Contacto</a></h3>
             </div>
         </section>
     </main>
